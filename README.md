@@ -1,6 +1,6 @@
 ## WebserverBox
 
-This repository is a [Vagrant](https://www.vagrantup.com/) box to build up a Debian server running NGINX (latest), PHP 7, Ruby 2.3, Python 2.7, MySQL 5.7 and NodeJS 6.
+This repository is a [Vagrant](https://www.vagrantup.com/) box to build up a Debian server running NGINX (latest), PHP 7, Ruby 2.3, Python 3.4, MySQL 5.7 and NodeJS 6.
 
 It also has a Samba, to share files with your host machine.
 
