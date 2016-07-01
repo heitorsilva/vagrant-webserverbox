@@ -4,3 +4,4 @@ sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::O
 sudo apt-get install debconf-utils build-essential module-assistant libreadline-dev vim locate ack-grep htop zip git -y
 sudo bash -c 'echo "syntax on;" >> ~/.vimrc'
 sudo bash -c 'echo "syntax on;" >> /root/.vimrc'
+mkdir -p ~/public_html

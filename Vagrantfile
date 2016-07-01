@@ -20,6 +20,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "nginx.list", destination: "/tmp/nginx.list"
   config.vm.provision "file", source: "mysql-apt-config_0.7.3-1_all.deb", destination: "/tmp/mysql-apt-config_0.7.3-1_all.deb"
   config.vm.provision "file", source: "php-fpm.conf", destination: "/tmp/php-fpm.conf"
+  config.vm.provision "file", source: "smb.conf", destination: "/tmp/smb.conf"
   config.vm.provision "file", source: "virtual.host", destination: "/tmp/virtual.host"
   config.vm.provision "shell", path: "install-basics.sh", privileged: false
   config.vm.provision "shell", path: "install-nodejs.sh", privileged: false
@@ -28,4 +29,5 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "install-php.sh", privileged: false
   config.vm.provision "shell", path: "install-ruby.sh", privileged: false
   config.vm.provision "shell", path: "install-nginx.sh", privileged: false
+  config.vm.provision "shell", path: "install-samba.sh", privileged: false
 end
