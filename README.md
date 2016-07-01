@@ -2,6 +2,8 @@
 
 This repository is a [Vagrant](https://www.vagrantup.com/) box to build up a Debian server running NGINX (latest), PHP 7, Ruby 2.3, Python 2.7, MySQL 5.7 and NodeJS 6.
 
+It also has a Samba, to share files with your host machine.
+
 ====================
 #### Instructions
 
@@ -41,6 +43,11 @@ Cmnd_Alias VAGRANT_HOSTMANAGER_UPDATE = /bin/cp /home/<YOUR_USER>/.vagrant.d/tmp
 Change <YOUR_USER> for the user that you use on your operating system, that has permission to run sudo commands.
 
 Reference: [http://www.josheaton.org/how-to-automatically-add-hosts-to-vagrant-without-a-password-on-os-x/](http://www.josheaton.org/how-to-automatically-add-hosts-to-vagrant-without-a-password-on-os-x/)
+
+====================
+#### Samba
+
+The folder that is shared is: /home/vagrant/public_html
 
 ====================
 #### Passwords
