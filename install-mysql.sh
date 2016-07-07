@@ -14,4 +14,5 @@ sudo bash -c 'echo "" >> /etc/mysql/my.cnf'
 sudo bash -c 'echo "sql-mode=\"\"" >> /etc/mysql/my.cnf'
 sudo /etc/init.d/mysql restart
 sudo mysql -e "USE mysql; UPDATE user SET plugin='' WHERE user='root'; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+mysql_upgrade -u root --force
 sudo /etc/init.d/mysql restart
