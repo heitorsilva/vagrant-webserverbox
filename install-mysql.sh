@@ -16,3 +16,4 @@ sudo /etc/init.d/mysql restart
 sudo mysql -e "USE mysql; UPDATE user SET plugin='' WHERE user='root'; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; FLUSH PRIVILEGES;"
 mysql_upgrade -u root --force
 sudo /etc/init.d/mysql restart
+mysql_tzinfo_to_sql /usr/share/zoneinfo/ | mysql -u root mysql
